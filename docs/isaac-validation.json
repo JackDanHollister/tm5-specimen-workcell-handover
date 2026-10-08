@@ -1,0 +1,38 @@
+{
+  "scanner_gripper": {
+    "status": "passed",
+    "drawer": "drawer_001",
+    "robot": "scanner_gripper",
+    "robot_connected": false,
+    "physical_pick_allowed": false,
+    "maximum_fk_error_m": 3.8774754053698055e-07,
+    "frames": 3
+  },
+  "no_scanner_gripper": {
+    "status": "passed",
+    "drawer": "drawer_002",
+    "robot": "no_scanner_gripper",
+    "robot_connected": false,
+    "physical_pick_allowed": false,
+    "maximum_fk_error_m": 2.4126188652440206e-07,
+    "frames": 3
+  },
+  "scanner_no_gripper": {
+    "status": "passed",
+    "drawer": "drawer_003",
+    "robot": "scanner_no_gripper",
+    "robot_connected": false,
+    "physical_pick_allowed": false,
+    "maximum_fk_error_m": 3.754012274370666e-07,
+    "frames": 3
+  },
+  "no_scanner_no_gripper": {
+    "status": "passed",
+    "drawer": "drawer_004",
+    "robot": "no_scanner_no_gripper",
+    "robot_connected": false,
+    "physical_pick_allowed": false,
+    "maximum_fk_error_m": 3.242417251914098e-07,
+    "frames": 3
+  }
+}

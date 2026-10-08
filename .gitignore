@@ -1,0 +1,11 @@
+assets/
+data/
+models/
+outputs/
+.downloads/
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+

@@ -1,0 +1,9 @@
+{
+  "source_reconstruction_sha256": "6704b105deb6fc55b9262c3aae0a9418a17cbb3a69da3b8ffe0aadcd91f03dc2",
+  "selection": "Seven stationary specimen placements reconstructed from saved EIH images on 2026-09-17.",
+  "coordinate_frame": "robot base, metres, Z up",
+  "calibration_physically_verified": false,
+  "physical_pinhead_verified": false,
+  "raw_images_included": false,
+  "fields": "Only the geometric input fields consumed by the demo are exported."
+}

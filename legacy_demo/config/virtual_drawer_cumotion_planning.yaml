@@ -1,0 +1,43 @@
+format_version: 1
+
+robot:
+  joint_names: [joint_1, joint_2, joint_3, joint_4, joint_5, joint_6]
+  ready_joint_positions: [0.0, 0.0, 1.5708, 0.0, 1.5708, 0.0]
+  planning_tool_frame: pin_grasp_tcp
+  tool_profile: watson_qc_nominal
+
+collision_scene:
+  foam_thickness_m: 0.040
+  surface_clutter_height_m: 0.0025
+  wall_thickness_m: 0.012
+  wall_height_m: 0.035
+  specimen_padding_xy_m: 0.001
+  specimen_padding_z_m: 0.001
+  selected_open_body_width_m: 0.005
+  selected_open_wing_thickness_m: 0.0015
+  other_pin_shaft_width_m: 0.0016
+  other_pin_head_radius_m: 0.003
+
+planning:
+  stages: [pregrasp, grasp, lift]
+  required_sampled_sphere_clearance_m: 0.004
+  required_selected_specimen_clearance_m: 0.0
+  goal_translation_tolerance_m: 0.0001
+  goal_orientation_tolerance_rad: 0.005
+  collision_validation_dt_seconds: 0.01
+  selection_rule:
+    - maximum_minimum_sampled_clearance
+    - maximum_joint_limit_margin
+    - minimum_joint_space_path_length
+
+scope:
+  virtual_source_only: true
+  isaac_launched: false
+  ros_used: false
+  watson_connected: false
+  real_robot_commanded: false
+  physical_pick_allowed: false
+  note: >-
+    Standalone cuMotion evaluates virtual grasp candidates against conservative
+    drawer primitives. The drawer placement, tool profile, collision geometry,
+    grasp depth, and TCP are not a physical registration or execution authority.

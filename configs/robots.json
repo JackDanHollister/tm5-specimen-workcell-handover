@@ -1,0 +1,367 @@
+[
+  {
+    "name": "scanner_gripper",
+    "scanner_present": true,
+    "gripper_present": true,
+    "usd": "assets/robots/scanner_gripper/robot.usdc",
+    "urdf": "assets/robots/scanner_gripper/robot.urdf",
+    "xrdf": "assets/robots/scanner_gripper/robot.xrdf",
+    "source_model_identity": "TM5S-900-labelled existing twin",
+    "link_paths": {
+      "base": "/tm5s_with_2fg7/Geometry/base",
+      "finger_tip_plane": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/finger_tip_plane",
+      "flange": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange",
+      "gripper_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/gripper_tcp",
+      "link_0": "/tm5s_with_2fg7/Geometry/base/link_0",
+      "link_1": "/tm5s_with_2fg7/Geometry/base/link_0/link_1",
+      "link_2": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2",
+      "link_3": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3",
+      "link_4": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4",
+      "link_5": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5",
+      "link_6": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6",
+      "onrobot_2fg7_base_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link",
+      "onrobot_2fg7_left_finger_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/onrobot_2fg7_left_finger_link",
+      "onrobot_2fg7_origin": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin",
+      "onrobot_2fg7_right_finger_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/onrobot_2fg7_right_finger_link",
+      "onrobot_nominal_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_nominal_tcp",
+      "onrobot_qc_robot_side_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link",
+      "pin_grasp_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/gripper_tcp/pin_grasp_tcp",
+      "photoneo_camera": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/photoneo_camera",
+      "benano_adapter": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_adapter",
+      "benano_support": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_support",
+      "eih_camera_optical": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/eih_camera_optical"
+    },
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "adapter_extension_m": 0.02315,
+    "adapter_cap_retained": true,
+    "projecting_support_present": true,
+    "nominal_tool_mass_kg": 2.55732,
+    "mass_status": "Known assembled nominal totals for scanner variants; scannerless totals require measurement",
+    "T_flange_eih_m": [
+      [
+        -0.9999286471022776,
+        0.011866973598736046,
+        0.001369540731704838,
+        -0.00029798000000000004
+      ],
+      [
+        -0.011867949305932216,
+        -0.9999293238072215,
+        -0.0007065194298572705,
+        0.07498099999999999
+      ],
+      [
+        0.0013610596903589555,
+        -0.0007227226576249353,
+        0.9999988125935348,
+        0.042726
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_photoneo_m": [
+      [
+        0.09458762219559652,
+        0.9644253674418859,
+        0.24685398996566082,
+        -0.08689705572885795
+      ],
+      [
+        -0.9557034165612481,
+        0.018544922056219215,
+        0.29374660072771264,
+        -0.09760441608342875
+      ],
+      [
+        0.27871878533844924,
+        -0.26370399409283174,
+        0.9234587387636478,
+        0.08058103500550043
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dynamics_validated": false,
+    "physical_pick_allowed": false,
+    "zero_fk_error": 8.933518647058492e-08,
+    "removed_links": [],
+    "source_model_sha256": "3de6aa6e092234c18965a8a4d5b696337a0235b0e7ff8a8f0c13746f4fcd123d"
+  },
+  {
+    "name": "no_scanner_gripper",
+    "scanner_present": false,
+    "gripper_present": true,
+    "usd": "assets/robots/no_scanner_gripper/robot.usdc",
+    "urdf": "assets/robots/no_scanner_gripper/robot.urdf",
+    "xrdf": "assets/robots/no_scanner_gripper/robot.xrdf",
+    "source_model_identity": "TM5S-900-labelled existing twin",
+    "link_paths": {
+      "base": "/tm5s_with_2fg7/Geometry/base",
+      "finger_tip_plane": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/finger_tip_plane",
+      "flange": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange",
+      "gripper_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/gripper_tcp",
+      "link_0": "/tm5s_with_2fg7/Geometry/base/link_0",
+      "link_1": "/tm5s_with_2fg7/Geometry/base/link_0/link_1",
+      "link_2": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2",
+      "link_3": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3",
+      "link_4": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4",
+      "link_5": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5",
+      "link_6": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6",
+      "onrobot_2fg7_base_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link",
+      "onrobot_2fg7_left_finger_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/onrobot_2fg7_left_finger_link",
+      "onrobot_2fg7_origin": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin",
+      "onrobot_2fg7_right_finger_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_2fg7_base_link/onrobot_2fg7_right_finger_link",
+      "onrobot_nominal_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/onrobot_nominal_tcp",
+      "onrobot_qc_robot_side_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link",
+      "pin_grasp_tcp": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link/onrobot_2fg7_origin/gripper_tcp/pin_grasp_tcp",
+      "benano_adapter": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_adapter",
+      "eih_camera_optical": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/eih_camera_optical"
+    },
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "adapter_extension_m": 0.02315,
+    "adapter_cap_retained": true,
+    "projecting_support_present": false,
+    "nominal_tool_mass_kg": null,
+    "mass_status": "Known assembled nominal totals for scanner variants; scannerless totals require measurement",
+    "T_flange_eih_m": [
+      [
+        -0.9999286471022776,
+        0.011866973598736046,
+        0.001369540731704838,
+        -0.00029798000000000004
+      ],
+      [
+        -0.011867949305932216,
+        -0.9999293238072215,
+        -0.0007065194298572705,
+        0.07498099999999999
+      ],
+      [
+        0.0013610596903589555,
+        -0.0007227226576249353,
+        0.9999988125935348,
+        0.042726
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_photoneo_m": null,
+    "dynamics_validated": false,
+    "physical_pick_allowed": false,
+    "zero_fk_error": 8.755758598320493e-08,
+    "removed_links": [
+      "benano_support",
+      "photoneo_camera"
+    ],
+    "source_model_sha256": "3de6aa6e092234c18965a8a4d5b696337a0235b0e7ff8a8f0c13746f4fcd123d"
+  },
+  {
+    "name": "scanner_no_gripper",
+    "scanner_present": true,
+    "gripper_present": false,
+    "usd": "assets/robots/scanner_no_gripper/robot.usdc",
+    "urdf": "assets/robots/scanner_no_gripper/robot.urdf",
+    "xrdf": "assets/robots/scanner_no_gripper/robot.xrdf",
+    "source_model_identity": "TM5S-900-labelled existing twin",
+    "link_paths": {
+      "base": "/tm5s_with_2fg7/Geometry/base",
+      "flange": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange",
+      "link_0": "/tm5s_with_2fg7/Geometry/base/link_0",
+      "link_1": "/tm5s_with_2fg7/Geometry/base/link_0/link_1",
+      "link_2": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2",
+      "link_3": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3",
+      "link_4": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4",
+      "link_5": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5",
+      "link_6": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6",
+      "onrobot_qc_robot_side_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link",
+      "photoneo_camera": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/photoneo_camera",
+      "benano_adapter": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_adapter",
+      "benano_support": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_support",
+      "eih_camera_optical": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/eih_camera_optical"
+    },
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "adapter_extension_m": 0.02315,
+    "adapter_cap_retained": true,
+    "projecting_support_present": true,
+    "nominal_tool_mass_kg": 1.41732,
+    "mass_status": "Known assembled nominal totals for scanner variants; scannerless totals require measurement",
+    "T_flange_eih_m": [
+      [
+        -0.9999286471022776,
+        0.011866973598736046,
+        0.001369540731704838,
+        -0.00029798000000000004
+      ],
+      [
+        -0.011867949305932216,
+        -0.9999293238072215,
+        -0.0007065194298572705,
+        0.07498099999999999
+      ],
+      [
+        0.0013610596903589555,
+        -0.0007227226576249353,
+        0.9999988125935348,
+        0.042726
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_photoneo_m": [
+      [
+        0.09458762219559652,
+        0.9644253674418859,
+        0.24685398996566082,
+        -0.08689705572885795
+      ],
+      [
+        -0.9557034165612481,
+        0.018544922056219215,
+        0.29374660072771264,
+        -0.09760441608342875
+      ],
+      [
+        0.27871878533844924,
+        -0.26370399409283174,
+        0.9234587387636478,
+        0.08058103500550043
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "dynamics_validated": false,
+    "physical_pick_allowed": false,
+    "zero_fk_error": 8.933518647058492e-08,
+    "removed_links": [
+      "finger_tip_plane",
+      "gripper_tcp",
+      "onrobot_2fg7_base_link",
+      "onrobot_2fg7_left_finger_link",
+      "onrobot_2fg7_origin",
+      "onrobot_2fg7_right_finger_link",
+      "onrobot_nominal_tcp",
+      "pin_grasp_tcp"
+    ],
+    "source_model_sha256": "3de6aa6e092234c18965a8a4d5b696337a0235b0e7ff8a8f0c13746f4fcd123d"
+  },
+  {
+    "name": "no_scanner_no_gripper",
+    "scanner_present": false,
+    "gripper_present": false,
+    "usd": "assets/robots/no_scanner_no_gripper/robot.usdc",
+    "urdf": "assets/robots/no_scanner_no_gripper/robot.urdf",
+    "xrdf": "assets/robots/no_scanner_no_gripper/robot.xrdf",
+    "source_model_identity": "TM5S-900-labelled existing twin",
+    "link_paths": {
+      "base": "/tm5s_with_2fg7/Geometry/base",
+      "flange": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange",
+      "link_0": "/tm5s_with_2fg7/Geometry/base/link_0",
+      "link_1": "/tm5s_with_2fg7/Geometry/base/link_0/link_1",
+      "link_2": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2",
+      "link_3": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3",
+      "link_4": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4",
+      "link_5": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5",
+      "link_6": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6",
+      "onrobot_qc_robot_side_link": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/onrobot_qc_robot_side_link",
+      "benano_adapter": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/benano_adapter",
+      "eih_camera_optical": "/tm5s_with_2fg7/Geometry/base/link_0/link_1/link_2/link_3/link_4/link_5/link_6/flange/eih_camera_optical"
+    },
+    "joint_names": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5",
+      "joint_6"
+    ],
+    "adapter_extension_m": 0.02315,
+    "adapter_cap_retained": true,
+    "projecting_support_present": false,
+    "nominal_tool_mass_kg": null,
+    "mass_status": "Known assembled nominal totals for scanner variants; scannerless totals require measurement",
+    "T_flange_eih_m": [
+      [
+        -0.9999286471022776,
+        0.011866973598736046,
+        0.001369540731704838,
+        -0.00029798000000000004
+      ],
+      [
+        -0.011867949305932216,
+        -0.9999293238072215,
+        -0.0007065194298572705,
+        0.07498099999999999
+      ],
+      [
+        0.0013610596903589555,
+        -0.0007227226576249353,
+        0.9999988125935348,
+        0.042726
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_flange_photoneo_m": null,
+    "dynamics_validated": false,
+    "physical_pick_allowed": false,
+    "zero_fk_error": 8.755758598320493e-08,
+    "removed_links": [
+      "benano_support",
+      "finger_tip_plane",
+      "gripper_tcp",
+      "onrobot_2fg7_base_link",
+      "onrobot_2fg7_left_finger_link",
+      "onrobot_2fg7_origin",
+      "onrobot_2fg7_right_finger_link",
+      "onrobot_nominal_tcp",
+      "photoneo_camera",
+      "pin_grasp_tcp"
+    ],
+    "source_model_sha256": "3de6aa6e092234c18965a8a4d5b696337a0235b0e7ff8a8f0c13746f4fcd123d"
+  }
+]

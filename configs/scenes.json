@@ -1,0 +1,122 @@
+[
+  {
+    "drawer": "drawer_001",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_001__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_001",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_001__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_001",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_001__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_001",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_001__no_scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_002",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_002__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_002",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_002__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_002",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_002__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_002",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_002__no_scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_003",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_003__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_003",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_003__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_003",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_003__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_003",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_003__no_scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_004",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_004__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_004",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_004__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_004",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_004__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_004",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_004__no_scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_005",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_005__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_005",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_005__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_005",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_005__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_005",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_005__no_scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_006",
+    "robot": "scanner_gripper",
+    "usd": "assets/scenes/drawer_006__scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_006",
+    "robot": "no_scanner_gripper",
+    "usd": "assets/scenes/drawer_006__no_scanner_gripper.usda"
+  },
+  {
+    "drawer": "drawer_006",
+    "robot": "scanner_no_gripper",
+    "usd": "assets/scenes/drawer_006__scanner_no_gripper.usda"
+  },
+  {
+    "drawer": "drawer_006",
+    "robot": "no_scanner_no_gripper",
+    "usd": "assets/scenes/drawer_006__no_scanner_no_gripper.usda"
+  }
+]

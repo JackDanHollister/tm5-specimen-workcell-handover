@@ -1,0 +1,158 @@
+[
+  {
+    "id": "drawer_001",
+    "folder": "data/drawers/drawer_001",
+    "image": "data/drawers/drawer_001/eih/image.png",
+    "home_joints_rad": [
+      0.28127349234022186,
+      -0.2268602872752982,
+      1.3899973205149536,
+      0.40573602798600605,
+      1.5699594414185654,
+      0.28214390549148394
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1415791,
+      "display_points": 422663,
+      "mesh_vertices": 349931,
+      "mesh_triangles": 648788
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_001/drawer.usdc"
+  },
+  {
+    "id": "drawer_002",
+    "folder": "data/drawers/drawer_002",
+    "image": "data/drawers/drawer_002/eih/image.png",
+    "home_joints_rad": [
+      0.28127508058984113,
+      -0.22686787945754436,
+      1.3899861504077407,
+      0.4057246484392831,
+      1.5699611867478174,
+      0.28214437673038195
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1494092,
+      "display_points": 450000,
+      "mesh_vertices": 370013,
+      "mesh_triangles": 688338
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_002/drawer.usdc"
+  },
+  {
+    "id": "drawer_003",
+    "folder": "data/drawers/drawer_003",
+    "image": "data/drawers/drawer_003/eih/image.png",
+    "home_joints_rad": [
+      0.28127522021618134,
+      -0.22686812380363963,
+      1.3899873721382172,
+      0.40572272857710584,
+      1.5699635603956001,
+      0.28214437673038195
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1474599,
+      "display_points": 429396,
+      "mesh_vertices": 363665,
+      "mesh_triangles": 666937
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_003/drawer.usdc"
+  },
+  {
+    "id": "drawer_004",
+    "folder": "data/drawers/drawer_004",
+    "image": "data/drawers/drawer_004/eih/image.png",
+    "home_joints_rad": [
+      0.28127534238922897,
+      -0.2268685950425377,
+      1.3899888556680815,
+      0.4057205818221259,
+      1.569965811870335,
+      0.28214437673038195
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1756661,
+      "display_points": 450000,
+      "mesh_vertices": 432037,
+      "mesh_triangles": 769524
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_004/drawer.usdc"
+  },
+  {
+    "id": "drawer_005",
+    "folder": "data/drawers/drawer_005",
+    "image": "data/drawers/drawer_005/eih/image.png",
+    "home_joints_rad": [
+      0.28127534238922897,
+      -0.22686906628143572,
+      1.3899905835440407,
+      0.40571867941324125,
+      1.5699679935319,
+      0.28214530175488556
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1865460,
+      "display_points": 450000,
+      "mesh_vertices": 461962,
+      "mesh_triangles": 867842
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_005/drawer.usdc"
+  },
+  {
+    "id": "drawer_006",
+    "folder": "data/drawers/drawer_006",
+    "image": "data/drawers/drawer_006/eih/image.png",
+    "home_joints_rad": [
+      0.28127534238922897,
+      -0.22686883938863298,
+      1.3899916656481772,
+      0.4057165501115538,
+      1.5699704369928529,
+      0.2821457729937836
+    ],
+    "counts": {
+      "views": 3,
+      "source_pixels": 2688000,
+      "valid_points": 1832917,
+      "display_points": 450000,
+      "mesh_vertices": 453398,
+      "mesh_triangles": 845275
+    },
+    "coordinate_frame": "robot_base",
+    "registered_units": "m",
+    "raw_units": "mm",
+    "pin_orientations_available": false,
+    "usd": "assets/drawers/drawer_006/drawer.usdc"
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "schema": "workcell.release_assets.v1",
+  "repository": "JackDanHollister/tm5-specimen-workcell-handover",
+  "tag": "v0.1.0",
+  "bundles": [
+    {
+      "id": "assets",
+      "archive_sha256": "ff63bd96f974de6b15e4f5345965cd2bf89bda8c32060b34fc70996c6535a99e",
+      "parts": [
+        {
+          "name": "assets.tar.gz",
+          "bytes": 122436693,
+          "sha256": "ff63bd96f974de6b15e4f5345965cd2bf89bda8c32060b34fc70996c6535a99e"
+        }
+      ]
+    },
+    {
+      "id": "drawers",
+      "archive_sha256": "ceecbdc0c4e4d2facc6a929a1c333032a92c8ed7efe2418b96850e6840d8a53c",
+      "parts": [
+        {
+          "name": "drawers.tar.gz",
+          "bytes": 789183890,
+          "sha256": "ceecbdc0c4e4d2facc6a929a1c333032a92c8ed7efe2418b96850e6840d8a53c"
+        }
+      ]
+    },
+    {
+      "id": "pins",
+      "archive_sha256": "fc4515c37b68fee207c14f60503b8a0bc040138a294861a020d17559a3f4cfbd",
+      "parts": [
+        {
+          "name": "pins.tar.gz.part01",
+          "bytes": 1073741824,
+          "sha256": "6d29960e003e06c5801ef460d2906c424f7c43c65fae68d89d82ac5e584aba90"
+        },
+        {
+          "name": "pins.tar.gz.part02",
+          "bytes": 124420587,
+          "sha256": "1a7f0ccb670121364c779606da346e3dd6c93a0a302626d7710f1d598284e386"
+        }
+      ]
+    },
+    {
+      "id": "calibration",
+      "archive_sha256": "9d97b9a4261a2dfee0ca902f861f484b241c8309e54bd99e6b6dc3fb11e0e76a",
+      "parts": [
+        {
+          "name": "calibration.tar.gz",
+          "bytes": 954208286,
+          "sha256": "9d97b9a4261a2dfee0ca902f861f484b241c8309e54bd99e6b6dc3fb11e0e76a"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "archive_sha256": "5ac5933bc4ed8f16ae3e4261687fbae04f5805401fc5ce0637173569295d6da8",
+      "parts": [
+        {
+          "name": "models.tar.gz.part01",
+          "bytes": 1073741824,
+          "sha256": "2e5792f5d6ac7f6f0c5687c73c68e738ded1cbb886b28923925b24cb3816c0a9"
+        },
+        {
+          "name": "models.tar.gz.part02",
+          "bytes": 1073741824,
+          "sha256": "02c4da1360b5d201008837fe836c2285da0a308f490290e58302963d5ac56ad3"
+        },
+        {
+          "name": "models.tar.gz.part03",
+          "bytes": 990421854,
+          "sha256": "b5960aae6f332b0c18b50d63c324475ec1b9127aa34cb57272181e9900ae2142"
+        }
+      ]
+    }
+  ]
+}
