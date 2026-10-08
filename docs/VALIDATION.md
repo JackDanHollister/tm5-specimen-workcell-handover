@@ -29,3 +29,10 @@ times and command settings. Contact forces, foam friction, slip, bending,
 grasp-length metrology, cable envelopes and absolute physical calibration are not
 qualified by these tests. Historical inferred pin axes are development evidence,
 not verified pinhead/tip/grasp landmarks or labels for the six new drawers.
+
+The relocated DINO backbone/head loaded from bundled files under OS network
+isolation and produced finite normalized five-class probabilities on one saved
+image. The bundled YOLO detector produced11 specimen framing boxes for drawer001;
+that is an example output, not a verified specimen inventory or recall estimate.
+Cached geometry extraction was rerun for117 historical images and produced all
+seven provisional fits. Original data/caches remain unchanged.

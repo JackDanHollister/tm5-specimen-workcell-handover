@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "shape": [
+    5,
+    48,
+    64
+  ],
+  "info": {
+    "source_size": [
+      2592,
+      1944
+    ],
+    "model_size": [
+      1024,
+      768
+    ],
+    "inference_seconds": 0.18565674300771207
+  },
+  "backbone_sha256": "7c1da9a54b3bdb333f5ebc42e404b7f19b1b5bed504877623c9dc87397f41488",
+  "classifier_sha256": "f7f3b1770120fe1db6d644ceb466214cc60686f32974bdb39d48cd8bb86748b8",
+  "hardware_commands": false
+}

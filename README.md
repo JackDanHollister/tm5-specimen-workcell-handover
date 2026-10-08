@@ -5,6 +5,8 @@ robot attachment configurations, calibration evidence and the existing pin-axis
 workflow. The development task is automatic specimen-relative viewing and access
 planning for unfamiliar drawers. See [the mission](docs/MISSION.md).
 
+![Measured drawer and moving robot](docs/images/workcell-overview.png)
+
 The six drawer datasets were captured on **7 October 2026**. Each has one lit EIH
 overhead photograph and three Photoneo scans at the centre and robot-base Y
 offsets **−100 mm / +100 mm**, retaining each scan's actual flange pose. They are
