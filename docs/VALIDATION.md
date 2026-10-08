@@ -14,9 +14,10 @@ The package is tested offline; no robot/camera/controller is contacted.
   registered drawer geometry remained fixed.
 - The saved-observation example reproduces all seven provisional historical shaft
   fits; maximum direction change is below0.001degree.
-- Final publication validation also checks the relocated/fresh checkout and
-  private release file hashes. Machine paths in immutable original evidence do
-  not become runtime dependencies.
+- The relocated checkout installs/verifies all1,500 payload files. All24 USD
+  combinations resolve inside that checkout and the seven-axis replay passes.
+  A Python file-access audit blocks the original data/source paths during replay.
+  Private release hashes are checked separately before publication.
 
 Normal CPU CI tests cover frame conventions, attachment motion and invalid trees.
 GitHub-hosted CI does not run proprietary Isaac/GPU software or live hardware.
