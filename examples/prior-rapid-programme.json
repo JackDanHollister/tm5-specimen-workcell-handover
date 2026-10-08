@@ -1,0 +1,1189 @@
+{
+  "schema": "workcell.historical_route_summary.v1",
+  "provenance": "data/experiments/records/rapid-batch-benchmarks/motion-home-release/programme.json",
+  "source_sha256": "2262292ffaeda4939c8d66602969223db03c1d1987ceaf6f27d889d3cf7ac176",
+  "robot_configuration": "scanner_no_gripper",
+  "joint_names": [
+    "joint_1",
+    "joint_2",
+    "joint_3",
+    "joint_4",
+    "joint_5",
+    "joint_6"
+  ],
+  "joint_units": "radians",
+  "target_base_m": [
+    0.4599792118551619,
+    -0.06690347891308694,
+    0.037280680677292365
+  ],
+  "project_speed_percent": 45.0,
+  "camera_profile": {
+    "focus": 5,
+    "shutter": 17097,
+    "gain": 1,
+    "image_size": "5M",
+    "use_light": true,
+    "photoneo_each_view": true
+  },
+  "batches": [
+    {
+      "id": "near_pin",
+      "stations": [
+        {
+          "label": "s4_013",
+          "transitions": [
+            "start__arc60_start",
+            "arc60_start__s4_013"
+          ]
+        },
+        {
+          "label": "orbit_005_m6",
+          "transitions": [
+            "s4_013__s4_011",
+            "s4_011__orbit_005_m6"
+          ]
+        },
+        {
+          "label": "orbit_006_m3",
+          "transitions": [
+            "orbit_005_m6__s4_011",
+            "s4_011__orbit_006_m3"
+          ]
+        },
+        {
+          "label": "orbit_007_p1",
+          "transitions": [
+            "orbit_006_m3__s4_011",
+            "s4_011__orbit_007_p1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broader_side",
+      "stations": [
+        {
+          "label": "pin_side_a",
+          "transitions": [
+            "orbit_007_p1__s4_013",
+            "s4_013__arc60_side",
+            "arc60_side__pin_side_a"
+          ]
+        },
+        {
+          "label": "pin_side_b",
+          "transitions": [
+            "pin_side_a__pin_side_b"
+          ]
+        },
+        {
+          "label": "pin_side_c",
+          "transitions": [
+            "pin_side_b__pin_side_c"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alternative_directions",
+      "stations": [
+        {
+          "label": "arc60_start",
+          "transitions": [
+            "pin_side_c__pin_side_a",
+            "pin_side_a__arc60_start"
+          ]
+        },
+        {
+          "label": "arc60_side",
+          "transitions": [
+            "arc60_start__arc60_side"
+          ]
+        },
+        {
+          "label": "s4_010",
+          "transitions": [
+            "arc60_side__s4_010"
+          ]
+        },
+        {
+          "label": "s4_011",
+          "transitions": [
+            "s4_010__s4_011"
+          ]
+        }
+      ]
+    }
+  ],
+  "executed_transition_sequence": [
+    "start__arc60_start",
+    "arc60_start__s4_013",
+    "s4_013__s4_011",
+    "s4_011__orbit_005_m6",
+    "orbit_005_m6__s4_011",
+    "s4_011__orbit_006_m3",
+    "orbit_006_m3__s4_011",
+    "s4_011__orbit_007_p1",
+    "orbit_007_p1__s4_013",
+    "s4_013__arc60_side",
+    "arc60_side__pin_side_a",
+    "pin_side_a__pin_side_b",
+    "pin_side_b__pin_side_c",
+    "pin_side_c__pin_side_a",
+    "pin_side_a__arc60_start",
+    "arc60_start__arc60_side",
+    "arc60_side__s4_010",
+    "s4_010__s4_011"
+  ],
+  "transitions": {
+    "start__arc60_start": {
+      "from": "start",
+      "to": "arc60_start",
+      "move": {
+        "start_q_rad": [
+          0.28127349234022186,
+          -0.2268602872752982,
+          1.3899960987844773,
+          0.4057381223811084,
+          1.569959162165885,
+          0.2821472041637702
+        ],
+        "target_q_rad": [
+          0.5318702399893503,
+          0.6361561062569644,
+          1.0633641869919708,
+          0.8964990167953245,
+          1.285835896223007,
+          0.21113806466736043
+        ],
+        "nominal_duration_s": 1.60906,
+        "effective_duration_s": 3.5756888888888887,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({30.47392,36.44906,60.92628,51.36561,73.67297,12.09732},{0,0,0,0,0,0},1.60906,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "3ef5415194b61b74d781026ba2833e393cc4f8e359a18e23d3e4d502d28dc944",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 45.93192170370479
+    },
+    "arc60_start__s4_013": {
+      "from": "arc60_start",
+      "to": "s4_013",
+      "move": {
+        "start_q_rad": [
+          0.5318702923492279,
+          0.6361560189905018,
+          1.0633641346320932,
+          0.8964990517019096,
+          1.285835896223007,
+          0.2111380908472992
+        ],
+        "target_q_rad": [
+          0.7539569295873964,
+          0.4877341793319926,
+          1.399374800052994,
+          0.7886443012732325,
+          1.1082475976350326,
+          0.1575004315621455
+        ],
+        "nominal_duration_s": 1.00401,
+        "effective_duration_s": 2.2311333333333336,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({43.19855,27.94511,80.17827,45.18599,63.49791,9.02411},{0,0,0,0,0,0},1.00401,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "a2c71b4c19aa611505189f5132c48f586408babc480de6faf281bccdc9813d33",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 36.42941151631507
+    },
+    "s4_013__s4_011": {
+      "from": "s4_013",
+      "to": "s4_011",
+      "move": {
+        "start_q_rad": [
+          0.7539568772275188,
+          0.48773412697211505,
+          1.399374800052994,
+          0.7886443536331101,
+          1.1082475976350326,
+          0.157500449015438
+        ],
+        "target_q_rad": [
+          0.6788253922109462,
+          0.6105797023323891,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122235921984258
+        ],
+        "nominal_duration_s": 0.72945,
+        "effective_duration_s": 1.621,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({38.89383,34.98364,70.33523,49.40950,69.68282,29.34825},{0,0,0,0,0,0},0.72945,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "8c820ad488bdcc20ff1341486f1a9e40174d7c54957413eb71e7dd1f654de169",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 36.74042229090625
+    },
+    "s4_011__orbit_005_m6": {
+      "from": "s4_011",
+      "to": "orbit_005_m6",
+      "move": {
+        "start_q_rad": [
+          0.6788253922109462,
+          0.6105797546922667,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122236096517183
+        ],
+        "target_q_rad": [
+          0.6986025906299199,
+          0.5602180522331675,
+          1.2821773370449765,
+          0.8435769686834272,
+          1.1525794842344643,
+          0.18196052289714523
+        ],
+        "nominal_duration_s": 0.70385,
+        "effective_duration_s": 1.564111111111111,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({40.02698,32.09813,73.46335,48.33340,66.03794,10.42557},{0,0,0,0,0,0},0.70385,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "e0463266f94cf1d0a1a5268c3dc3d3b3f57c8af1b9c859121e6731ff9aee648b",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 39.94086351266025
+    },
+    "orbit_005_m6__s4_011": {
+      "from": "orbit_005_m6",
+      "to": "s4_011",
+      "move": {
+        "start_q_rad": [
+          0.6986025557233349,
+          0.560217964966705,
+          1.2821773370449765,
+          0.8435769686834272,
+          1.1525794842344643,
+          0.1819605054438527
+        ],
+        "target_q_rad": [
+          0.6788253922109462,
+          0.6105797023323891,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122235921984258
+        ],
+        "nominal_duration_s": 0.70385,
+        "effective_duration_s": 1.564111111111111,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({38.89383,34.98364,70.33523,49.40950,69.68282,29.34825},{0,0,0,0,0,0},0.70385,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "cb032eceb97314dcb065249dfefc6eb50da6b7f0eb04aa05d2cc68c25c74bf09",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 39.91017578248753
+    },
+    "s4_011__orbit_006_m3": {
+      "from": "s4_011",
+      "to": "orbit_006_m3",
+      "move": {
+        "start_q_rad": [
+          0.6788253922109462,
+          0.6105797546922667,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122236096517183
+        ],
+        "target_q_rad": [
+          0.7265170376204668,
+          0.5248334215111596,
+          1.3394157589299807,
+          0.8168364301477717,
+          1.1305850195337568,
+          0.16995649736777863
+        ],
+        "nominal_duration_s": 0.71652,
+        "effective_duration_s": 1.5922666666666667,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({41.62636,30.07074,76.74287,46.80128,64.77775,9.73779},{0,0,0,0,0,0},0.71652,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "b782e6a894f68b7bdeab0d5807bf1137cf9510f3e5bef7129ac27519a028a920",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 37.97957223902644
+    },
+    "orbit_006_m3__s4_011": {
+      "from": "orbit_006_m3",
+      "to": "s4_011",
+      "move": {
+        "start_q_rad": [
+          0.7265170027138819,
+          0.5248334913243298,
+          1.3394157589299807,
+          0.8168364301477717,
+          1.1305850195337568,
+          0.16995651482107113
+        ],
+        "target_q_rad": [
+          0.6788253922109462,
+          0.6105797023323891,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122235921984258
+        ],
+        "nominal_duration_s": 0.71652,
+        "effective_duration_s": 1.5922666666666667,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({38.89383,34.98364,70.33523,49.40950,69.68282,29.34825},{0,0,0,0,0,0},0.71652,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "4b813007ac72a649aa8f015121f5f8bf6ce532e610edfb696017a59c71b0b926",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 37.8871877398395
+    },
+    "s4_011__orbit_007_p1": {
+      "from": "s4_011",
+      "to": "orbit_007_p1",
+      "move": {
+        "start_q_rad": [
+          0.6788253922109462,
+          0.6105797546922667,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122236096517183
+        ],
+        "target_q_rad": [
+          0.7640889149610739,
+          0.477007909348011,
+          1.4150667062918245,
+          0.7820371828568827,
+          1.101697376952298,
+          0.15378619638097635
+        ],
+        "nominal_duration_s": 0.74998,
+        "effective_duration_s": 1.6666222222222222,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({43.77907,27.33054,81.07735,44.80743,63.12261,8.81130},{0,0,0,0,0,0},0.74998,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "7a4ca6c9e030f020a30f0ae8af0fd5513083c51a0055bf126468c099af112c13",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.07382800600631
+    },
+    "orbit_007_p1__s4_013": {
+      "from": "orbit_007_p1",
+      "to": "s4_013",
+      "move": {
+        "start_q_rad": [
+          0.7640888800544889,
+          0.477007874441426,
+          1.4150667761049947,
+          0.7820371130437127,
+          1.101697376952298,
+          0.15378626619414643
+        ],
+        "target_q_rad": [
+          0.7539569295873964,
+          0.4877341793319926,
+          1.399374800052994,
+          0.7886443012732325,
+          1.1082475976350326,
+          0.1575004315621455
+        ],
+        "nominal_duration_s": 0.21697,
+        "effective_duration_s": 0.48215555555555556,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({43.19855,27.94511,80.17827,45.18599,63.49791,9.02411},{0,0,0,0,0,0},0.21697,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "a471403f3271ce549cc6572cf426b998416bcd699525c85829ba9c344d52d7d2",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.18222613551815
+    },
+    "s4_013__arc60_side": {
+      "from": "s4_013",
+      "to": "arc60_side",
+      "move": {
+        "start_q_rad": [
+          0.7539568772275188,
+          0.48773412697211505,
+          1.399374800052994,
+          0.7886443536331101,
+          1.1082475976350326,
+          0.157500449015438
+        ],
+        "target_q_rad": [
+          0.8489483939893651,
+          0.22617878856227197,
+          1.682019876839188,
+          0.6127857985069098,
+          1.0249688633102727,
+          0.023487593875788488
+        ],
+        "nominal_duration_s": 0.92084,
+        "effective_duration_s": 2.046311111111111,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({48.64116,12.95909,96.37264,35.11004,58.72639,1.34574},{0,0,0,0,0,0},0.92084,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "e99fcef8b3771444f398264b80d7dae49cbf0bcb147789dc977ce98ac7f96661",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.96609558710206
+    },
+    "arc60_side__pin_side_a": {
+      "from": "arc60_side",
+      "to": "pin_side_a",
+      "move": {
+        "start_q_rad": [
+          0.8489483939893651,
+          0.22617877110897944,
+          1.6820197895727256,
+          0.6127857112404473,
+          1.0249688109503952,
+          0.02348767067027558
+        ],
+        "target_q_rad": [
+          0.8799393328524023,
+          0.32734941664800127,
+          1.638015763073281,
+          0.6848010505039244,
+          1.0185130649400709,
+          0.10404797789056715
+        ],
+        "nominal_duration_s": 0.55092,
+        "effective_duration_s": 1.2242666666666666,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({50.41681,18.75574,93.85139,39.23621,58.35650,5.96151},{0,0,0,0,0,0},0.55092,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "1167727b83904f7f3ba5bfd16f898cb5ac49b55fc6640839a855714ff1abebf9",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.61369973633063
+    },
+    "pin_side_a__pin_side_b": {
+      "from": "pin_side_a",
+      "to": "pin_side_b",
+      "move": {
+        "start_q_rad": [
+          0.8799393328524023,
+          0.3273493642881237,
+          1.638015763073281,
+          0.6848009806907543,
+          1.0185130649400709,
+          0.10404797789056715
+        ],
+        "target_q_rad": [
+          0.9866159511293981,
+          0.23174586527735827,
+          1.807604170501814,
+          0.6127449578024132,
+          1.0191562187694307,
+          0.4983707393924216
+        ],
+        "nominal_duration_s": 0.76909,
+        "effective_duration_s": 1.7090888888888889,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({56.52893,13.27806,103.56809,35.10770,58.39335,28.55454},{0,0,0,0,0,0},0.76909,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "46cfd29c23fd38afd9e63e288147af8d3cdc5ae14cdfe30e9ab64902067431b9",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.90607487119483
+    },
+    "pin_side_b__pin_side_c": {
+      "from": "pin_side_b",
+      "to": "pin_side_c",
+      "move": {
+        "start_q_rad": [
+          0.9866159511293981,
+          0.23174584782406576,
+          1.807604170501814,
+          0.6127449054425357,
+          1.0191561315029682,
+          0.4983708092055917
+        ],
+        "target_q_rad": [
+          1.0932564410908776,
+          0.15934978243755868,
+          1.9635530043589364,
+          0.5313864347206976,
+          1.020329952691397,
+          0.8927961262542934
+        ],
+        "nominal_duration_s": 0.76919,
+        "effective_duration_s": 1.7093111111111112,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({62.63898,9.13007,112.50330,30.44620,58.46060,51.15345},{0,0,0,0,0,0},0.76919,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "36537014cbe498bd8c443fccccdb234c05d34035646a8212975fe9ef69b4e6f3",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 44.47453857247352
+    },
+    "pin_side_c__pin_side_a": {
+      "from": "pin_side_c",
+      "to": "pin_side_a",
+      "move": {
+        "start_q_rad": [
+          1.093256388731,
+          0.15934974753097364,
+          1.9635530043589364,
+          0.53138645217399,
+          1.020329917784812,
+          0.8927961262542934
+        ],
+        "target_q_rad": [
+          0.8799393328524023,
+          0.32734941664800127,
+          1.638015763073281,
+          0.6848010505039244,
+          1.0185130649400709,
+          0.10404797789056715
+        ],
+        "nominal_duration_s": 1.08772,
+        "effective_duration_s": 2.4171555555555555,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({50.41681,18.75574,93.85139,39.23621,58.35650,5.96151},{0,0,0,0,0,0},1.08772,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "12fad836cdf867acf7894b146104a7f60866cb4c3fbf8b52d4c1ce0c5a63a9c2",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 36.964270525512184
+    },
+    "pin_side_a__arc60_start": {
+      "from": "pin_side_a",
+      "to": "arc60_start",
+      "move": {
+        "start_q_rad": [
+          0.8799393328524023,
+          0.3273493642881237,
+          1.638015763073281,
+          0.6848009806907543,
+          1.0185130649400709,
+          0.10404797789056715
+        ],
+        "target_q_rad": [
+          0.5318702399893503,
+          0.6361561062569644,
+          1.0633641869919708,
+          0.8964990167953245,
+          1.285835896223007,
+          0.21113806466736043
+        ],
+        "nominal_duration_s": 1.313,
+        "effective_duration_s": 2.917777777777778,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({30.47392,36.44906,60.92628,51.36561,73.67297,12.09732},{0,0,0,0,0,0},1.31300,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "a2e408f29ebf3bb93cf0e7f32ae87f60f45424ffdb359cc7a196cbfd0b4cb752",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 37.32018954757156
+    },
+    "arc60_start__arc60_side": {
+      "from": "arc60_start",
+      "to": "arc60_side",
+      "move": {
+        "start_q_rad": [
+          0.5318702923492279,
+          0.6361560189905018,
+          1.0633641346320932,
+          0.8964990517019096,
+          1.285835896223007,
+          0.2111380908472992
+        ],
+        "target_q_rad": [
+          0.8489483939893651,
+          0.22617878856227197,
+          1.682019876839188,
+          0.6127857985069098,
+          1.0249688633102727,
+          0.023487593875788488
+        ],
+        "nominal_duration_s": 1.36234,
+        "effective_duration_s": 3.0274222222222225,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({48.64116,12.95909,96.37264,35.11004,58.72639,1.34574},{0,0,0,0,0,0},1.36234,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "75eb8c2b5935a53ad8679e8e73a526a6ed17887c456bbd387ef1681d5c25203c",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 42.67441795606446
+    },
+    "arc60_side__s4_010": {
+      "from": "arc60_side",
+      "to": "s4_010",
+      "move": {
+        "start_q_rad": [
+          0.8489483939893651,
+          0.22617877110897944,
+          1.6820197895727256,
+          0.6127857112404473,
+          1.0249688109503952,
+          0.02348767067027558
+        ],
+        "target_q_rad": [
+          0.4692788932884793,
+          0.61189323712744,
+          1.053775348081514,
+          0.8466040677380862,
+          1.3834406421139864,
+          0.5234690976348757
+        ],
+        "nominal_duration_s": 1.37286,
+        "effective_duration_s": 3.0507999999999997,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({26.88770,35.05890,60.37688,48.50684,79.26531,29.99257},{0,0,0,0,0,0},1.37286,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "3e1121b94890dd88da533bf7ff893294c5c3c0ee0ad7eec57b49e6dd73507392",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 37.203648579728025
+    },
+    "s4_010__s4_011": {
+      "from": "s4_010",
+      "to": "s4_011",
+      "move": {
+        "start_q_rad": [
+          0.46927880602201677,
+          0.6118932894873176,
+          1.0537752957216364,
+          0.8466041375512563,
+          1.3834406421139864,
+          0.5234690801815831
+        ],
+        "target_q_rad": [
+          0.6788253922109462,
+          0.6105797023323891,
+          1.2275813436474912,
+          0.8623584567641382,
+          1.2161946410745552,
+          0.5122235921984258
+        ],
+        "nominal_duration_s": 0.79287,
+        "effective_duration_s": 1.7619333333333331,
+        "project_speed_percent": 45.0,
+        "command": "PVTEnter(0)\r\nPVTPoint({38.89383,34.98364,70.33523,49.40950,69.68282,29.34825},{0,0,0,0,0,0},0.79287,true)\r\nPVTExit()\r\nQueueTag(1)",
+        "queue_tag": 1,
+        "command_sha256": "896df0d8c3c9deb9265570f53bf82426aaea3f98d1728c48c94a5a14f81519d0",
+        "transmitted_motion_points": 1,
+        "velocity_limits_rad_s": [
+          3.6651914291880923,
+          3.6651914291880923,
+          3.6651914291880923,
+          3.9269908169872414,
+          3.9269908169872414,
+          7.853981633974483
+        ],
+        "acceleration_limits_rad_s2": [
+          2.0,
+          2.0,
+          2.0,
+          2.5,
+          2.5,
+          4.0
+        ],
+        "jerk_limits_rad_s3": [
+          20.0,
+          20.0,
+          20.0,
+          25.0,
+          25.0,
+          40.0
+        ],
+        "start_velocity_assumption": "zero; live q/v cubic must be revalidated",
+        "jerk_scope": "Within each cubic only; acceleration jumps at starts/stops are not bounded by this jerk value",
+        "hardware_execution_authorised": false,
+        "physical_validation_complete": false
+      },
+      "recorded_minimum_scene_clearance_mm": 35.60578704026416
+    }
+  },
+  "estimated_motion_seconds": 35.75342222222222,
+  "physical_validation_complete": false,
+  "physical_execution_allowed": false,
+  "limits": "Offline preparation for one old scene; camera/analysis time excluded. Current model and scene require new planning."
+}

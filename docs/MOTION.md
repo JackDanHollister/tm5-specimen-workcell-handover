@@ -45,3 +45,7 @@ Physical handoff must preserve exclusive control, correct load/TCP, controller
 protections, meaningful continuous feedback and immediate operator stop. STOP
 cancels the sequence; no automatic return/restart after it. Simulator success and
 historical camera alignment do not qualify grasping, pickup or insertion.
+
+The earlier implementation, original failures and compact prepared PVT programme
+are now included in the [experiment supplement](EXPERIMENTS.md). It distinguishes
+completed attended captures from saved-image benchmarks and unexecuted prototypes.

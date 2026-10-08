@@ -1,0 +1,47 @@
+{
+  "schema": "workcell.historical_framing_example.v1",
+  "provenance": "data/experiments/records/20261006-pin-orbit-continuation-v9/target.json",
+  "source_sha256": "d1e0145302b25e83348d04483a18a28c286fe62ef38068f732093fd97ee086b4",
+  "detector": {
+    "index": 0,
+    "class": "specimen",
+    "confidence": 0.8982406258583069,
+    "box_xyxy": [
+      1194.1171875,
+      960.388671875,
+      1685.604736328125,
+      1324.26904296875
+    ]
+  },
+  "centre_pixel": [
+    1439.8609619140625,
+    1142.328857421875
+  ],
+  "target_base_m": [
+    0.4599792118551619,
+    -0.06690347891308694,
+    0.037280680677292365
+  ],
+  "support_points": 407,
+  "basis": "Fresh lit YOLO centroid and fresh Photoneo median local scene height; framing only",
+  "is_pin_centre": false,
+  "is_grasp_point": false,
+  "sources": [
+    {
+      "original_source": "/home/ai-user/Desktop/SpecimenWorkcell/20261005-one-specimen-depth10-v5/survey/registered_points.npz",
+      "sha256": "e4197527730ad8d680ebaa9d88977e18958d0a938b0802dc92d44eb6e92b60bf",
+      "package_path": "data/experiments/records/20261005-one-specimen-depth10-v5/survey/registered_points.npz"
+    },
+    {
+      "original_source": "/home/ai-user/Desktop/SpecimenWorkcell/20261005-one-specimen-depth10-v5/overview/photo_20261005T132536_367108Z_19ae05cc/image.png",
+      "sha256": "0312589ac1a5e44d6955ffaf1a3c6c9bfe19e837d6da506966a413e3b070486b",
+      "package_path": "data/experiments/records/20261005-one-specimen-depth10-v5/overview/photo_20261005T132536_367108Z_19ae05cc/image.png"
+    },
+    {
+      "original_source": "/home/ai-user/Desktop/SpecimenWorkcell/20261005-one-specimen-depth10-v5/overview/photo_20261005T132536_367108Z_19ae05cc/coordinates.json",
+      "sha256": "c21a3dfbd7762e64b06d31ce547c56a95362969aa0916b98e2960e1379f8fcc0",
+      "package_path": "data/experiments/records/20261005-one-specimen-depth10-v5/overview/photo_20261005T132536_367108Z_19ae05cc/coordinates.json"
+    }
+  ],
+  "applies_to": "one historical drawer/placement; not the six Oct7 drawers"
+}

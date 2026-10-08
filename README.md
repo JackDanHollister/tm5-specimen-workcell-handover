@@ -95,6 +95,9 @@ must not be assigned to new specimens automatically.
   the saved-image pin toolkit. No new model training is performed.
 - [Motion limits/profiles](docs/MOTION.md), [data inventory](docs/DATA.md),
   [calibration/coordinate conventions](docs/CALIBRATION.md) and tested examples.
+- [Our previous implementation and failed-run evidence](docs/EXPERIMENTS.md):
+  scan-supported framing example, original planner/runner source, close-view
+  routes, rapid-batch programme, logs, timing audit and later repair outcomes.
 
 The existing seven-pin illustrative transfer demo is also available under
 `legacy_demo/`, with its data in `assets/legacy_demo/` and presentation video in

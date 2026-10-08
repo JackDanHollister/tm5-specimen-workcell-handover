@@ -72,6 +72,18 @@
           "sha256": "b5960aae6f332b0c18b50d63c324475ec1b9127aa34cb57272181e9900ae2142"
         }
       ]
+    },
+    {
+      "id": "experiments",
+      "tag": "v0.2.0",
+      "archive_sha256": "1b5d803a93d911f60fc091db4b611333740e05297b39f40d0624c0d9bf49636f",
+      "parts": [
+        {
+          "name": "experiments.tar.gz",
+          "bytes": 267951393,
+          "sha256": "1b5d803a93d911f60fc091db4b611333740e05297b39f40d0624c0d9bf49636f"
+        }
+      ]
     }
   ]
 }

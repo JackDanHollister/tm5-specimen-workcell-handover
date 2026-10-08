@@ -52,3 +52,9 @@ copied without changing their contents.
 `scripts/verify_assets.py` checks these identities plus the six/eighteen Oct7 count.
 Large-file release archives have separate checksums and are joined/verified by
 the fetcher before extraction.
+
+The v0.2.0 [experiment supplement](EXPERIMENTS.md) adds original development
+records/source and further close-view photographs. Its43 session records include
+offline benchmark replays, rather than43 independent hardware runs. Added files
+are listed in `configs/experiments.json` and the combined payload manifest;
+reused original payloads and omitted dense records are explicit.
